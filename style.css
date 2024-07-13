@@ -6,4 +6,117 @@
 
 body {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(41, 240, 41);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.container h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: blue
+}
+
+.quote_content {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.quote_content p {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0.3rem;
+    color: blue;
+}
+
+.quote_icon {
+    font-size: 1.2rem;
+    color: blue;
+}
+
+.author {
+    text-align: center;
+    font-weight: 600;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.social_icons ul {
+    list-style-type: none;
+    display: flex;
+}
+
+ul li {
+    width: 50px;
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 0px 0;
+    cursor: pointer;
+}
+
+ul li i {
+    color: blue;
+    font-size: 1.3rem;
+}
+
+.social_icons button {
+    outline: none;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color: blue;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 0.9rem 2rem;
+    border-radius: 30px;
+}
+
+.social_icons button:active, ul li:active {
+    transform: scale(0.9);
+}
+
+.message {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 0.5rem;
+    background-color: blue;
+    color: #fff;
+    border-radius: 3px;
+    transform: translateX(200%);
+    transition: all 0.4s ease-in;
+}
+
+.message:active {
+    transform: translateX(-10%);
 }
